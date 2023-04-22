@@ -1,0 +1,98 @@
+#root {
+    width: 460px;
+    background-color: rgba(165, 42, 42, 0);
+    color: black;
+    
+}
+
+body {
+  background: salmon ;
+  
+}
+
+.Buttone {
+    background-color: rgba(182, 16, 16, 0);
+    width: 100%;
+    min-width: 460px;
+    border: 2px solid black;
+    height: 45px;
+    border-radius: 0px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    
+  }
+  
+  .Buttone:hover {
+    background-color: rgba(255, 255, 255, 0.695) !important;
+  }
+
+  .Buttone:hover:disabled {
+    background-color: rgba(53, 53, 53, 0.695) !important;
+  }
+
+ 
+
+  
+
+.Contenedor {
+    display: flex;
+    width: 99%;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+    margin-top: 10px;
+    height: 48px;
+  }
+  
+  .div-1,
+  .div-3 {
+    flex-basis: 20%;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .div-2 {
+    flex-basis: 60%;
+    text-align: center;
+  }
+
+  .adapter-modal-wrapper {
+    max-width: 400px;
+  }
+
+  
+@media (max-width: 740px) {
+ #root {
+   width: 100%;
+ }
+ .adapter-react-button {
+   width: 100%;
+   min-width: 100px;
+ }
+
+ .wallet-action-button {
+   width: 100%;
+   min-width: 200px;
+ }
+ .adapter-dropdown {
+   width: 100%;
+ }
+ 
+}
+  

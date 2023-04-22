@@ -1,0 +1,51 @@
+body {
+    background-color: #EDE8E0 !important;
+    color: black !important;
+    
+}
+
+.Main {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.Imagen {
+    width: 460px;
+    border: 2px solid black;
+}
+
+
+.Title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.Text {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 18px;
+    color: black;
+    margin-top: 20px;
+}
+
+@media (max-width: 740px) {
+  
+    .Title {
+        margin-top: 00px;
+        width: 100%;
+        text-align: center;
+    }
+    .Text {
+        padding-bottom: 50px;
+    }
+    .Main {
+        width: 90%;
+        
+    }
+    .Imagen {
+        width: 100%;
+    }
+}
